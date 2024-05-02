@@ -103,6 +103,7 @@
         "delete_playlist_confirm": "Delete this playlist?",
         "please_select_playlist": "Please select a playlist",
         "delete_account": "Delete Account",
+        "delete_group_confirm": "Delete this group?",
         "logout": "Logout from this device",
         "minimize_recommendations_default": "Minimize Recommendations by default",
         "minimize_chapters_default": "Minimize Chapters by default",

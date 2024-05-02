@@ -53,8 +53,14 @@
             <span v-text="group.groupName !== '' ? group.groupName : $t('video.all')" />
             <div v-if="group.groupName != '' && selectedGroup == group">
                 <i class="i-fa6-solid:edit mx-2" @click="showEditGroupModal = true" />
-                <i class="i-fa6-solid:circle-minus mx-2" @click="deleteGroup(group)" />
+                <i class="i-fa6-solid:circle-minus mx-2" @click="groupToDelete = group.groupName" />
             </div>
+            <ConfirmModal
+                v-if="groupToDelete == group.groupName"
+                :message="$t('actions.delete_group_confirm')"
+                @close="groupToDelete = null"
+                @confirm="deleteGroup(group)"
+            />
         </button>
         <button class="btn mx-1" @click="showCreateGroupModal = true">
             <i class="i-fa6-solid:circle-plus" />
@@ -118,9 +124,10 @@
 <script>
 import ModalComponent from "./ModalComponent.vue";
 import CreateGroupModal from "./CreateGroupModal.vue";
+import ConfirmModal from "./ConfirmModal.vue";
 
 export default {
-    components: { ModalComponent, CreateGroupModal },
+    components: { ModalComponent, CreateGroupModal, ConfirmModal },
     data() {
         return {
             subscriptions: [],
@@ -132,6 +139,7 @@ export default {
             showCreateGroupModal: false,
             showEditGroupModal: false,
             editedGroupName: "",
+            groupToDelete: null,
         };
     },
     computed: {
@@ -235,6 +243,7 @@ export default {
             this.deleteChannelGroup(group.groupName);
             this.channelGroups = this.channelGroups.filter(g => g != group);
             this.selectedGroup = this.channelGroups[0];
+            this.groupToDelete = null;
         },
         checkedChange(subscription) {
             const channelId = subscription.url.substr(-24);
