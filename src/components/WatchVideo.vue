@@ -18,7 +18,7 @@
             </ToastComponent>
         </Transition>
 
-        <div v-show="!video.error">
+        <div>
             <div :class="isMobile ? 'flex-col' : 'flex'">
                 <keep-alive>
                     <VideoPlayer
