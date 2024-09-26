@@ -53,7 +53,7 @@
         "minimize_description_default": "Minimizar la descripción por defecto",
         "show_comments": "Mostrar comentarios",
         "default_homepage": "Página de inicio predeterminada",
-        "country_selection": "País",
+        "country_selection": "País/Región",
         "buffering_goal": "Objetivo de amortiguación (en segundos)",
         "default_quality": "Calidad predeterminada",
         "audio_only": "Sólo audio",
@@ -164,7 +164,13 @@
         "concurrent_prefetch_limit": "Límite de captación previa de transmisiones simultáneas",
         "customize": "Personalizar",
         "invalid_url": "¡URL no válida!",
-        "add": "Añadir"
+        "add": "Añadir",
+        "delete_group_confirm": "¿Eliminar este grupo?",
+        "creator_liked": "Al autor le gustó",
+        "creator_replied": "El autor respondió",
+        "playback_speed": "Velocidad de reproducción",
+        "invalid_input": "Entrada no válida",
+        "prefer_hls": "Preferir HLS sobre DASH"
     },
     "titles": {
         "feed": "Contenido",

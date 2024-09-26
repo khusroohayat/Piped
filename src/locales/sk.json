@@ -9,7 +9,7 @@
         "minimize_description_default": "Skryť popis predvolene",
         "show_comments": "Zobraziť Komentáre",
         "default_homepage": "Úvodná stránka",
-        "country_selection": "Krajina",
+        "country_selection": "Krajina / región",
         "buffering_goal": "Vyrovnávacia pamäť (v sekundách)",
         "default_quality": "Predvolená kvalita",
         "audio_only": "Len zvuk",
@@ -131,7 +131,13 @@
         "generate_qrcode": "Vygenerovať QR kód",
         "customize": "Prispôsobiť",
         "invalid_url": "Neplatná adresa URL!",
-        "add": "Pridať"
+        "add": "Pridať",
+        "delete_group_confirm": "Vymazať túto skupinu?",
+        "creator_replied": "Odpoveď autora",
+        "creator_liked": "Autorovi sa páčilo",
+        "invalid_input": "Nesprávne údaje",
+        "playback_speed": "Rýchlosť prehrávania",
+        "prefer_hls": "Uprednostniť HLS pred DASH"
     },
     "player": {
         "watch_on": "Zobraziť na {0}",

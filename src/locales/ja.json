@@ -50,7 +50,7 @@
         "audio_only": "音声のみのモード",
         "default_quality": "標準の画質",
         "buffering_goal": "バッファリング目標値 (秒)",
-        "country_selection": "国",
+        "country_selection": "国/地域",
         "default_homepage": "ホームに表示するページ",
         "show_comments": "コメントを表示",
         "minimize_description_default": "最初から説明を最小化",
@@ -155,7 +155,13 @@
         "concurrent_prefetch_limit": "同時に先読みするストリーム数上限",
         "add": "追加",
         "invalid_url": "無効なURLです！",
-        "customize": "追加"
+        "customize": "追加",
+        "delete_group_confirm": "このグループを削除しますか？",
+        "creator_replied": "投稿者が返信",
+        "creator_liked": "投稿者が高評価",
+        "invalid_input": "入力が無効です",
+        "playback_speed": "再生速度",
+        "prefer_hls": "DASHよりHLSを優先"
     },
     "comment": {
         "pinned_by": "{author} によって固定",
